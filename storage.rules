@@ -1,0 +1,30 @@
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+    
+    function isAdmin() {
+      return request.auth != null;
+    }
+
+    // Car inventory images: Public read, Admin write
+    match /cars/{allPaths=**} {
+      allow read: if true;
+      allow write: if isAdmin() && 
+        request.resource.size < 10 * 1024 * 1024 &&
+        request.resource.contentType.matches('image/.*');
+    }
+
+    // Customer Trade-in / Sell submissions: Public upload up to 5MB, Admin read
+    match /trade_ins/{allPaths=**} {
+      allow read: if isAdmin();
+      allow write: if request.resource.size < 5 * 1024 * 1024 &&
+        request.resource.contentType.matches('image/.*');
+    }
+
+    // Site branding / logos: Public read, Admin write
+    match /brand/{allPaths=**} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+  }
+}

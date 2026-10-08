@@ -1,0 +1,64 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    // Helper function to check if request is authenticated as an admin
+    function isAdmin() {
+      return request.auth != null && (
+        request.auth.token.admin == true ||
+        request.auth.token.email.matches(".*@mrdcarsales\\.co\\.zw") ||
+        request.auth.uid == "mrd_owner_uid"
+      );
+    }
+
+    // Settings collection: Public can read, only admin can write
+    match /settings/{docId} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+
+    // Categories: Public can read, admin can write
+    match /categories/{categoryId} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+
+    // Cars collection: Public read only for published (non-draft) cars
+    match /cars/{carId} {
+      allow read: if resource.data.status in ['Available', 'Reserved', 'Sold'] || isAdmin();
+      allow write: if isAdmin();
+
+      // Private Pricing Subcollection: STRICTLY Admin only
+      // Private fields (costPriceUSD, markupValue, profit, VIN, soldPrice) never exposed to public
+      match /private/{pricingDoc} {
+        allow read, write: if isAdmin();
+      }
+    }
+
+    // Leads collection: Public CREATE-ONLY with schema validation; Admin read/update/delete
+    match /leads/{leadId} {
+      allow read, update, delete: if isAdmin();
+      allow create: if 
+        request.resource.data.fullName is string &&
+        request.resource.data.fullName.size() > 1 &&
+        request.resource.data.fullName.size() < 120 &&
+        request.resource.data.phone is string &&
+        request.resource.data.phone.size() > 5 &&
+        request.resource.data.phone.size() < 30 &&
+        request.resource.data.consentGiven == true &&
+        request.resource.data.status == 'New';
+    }
+
+    // Posts / Guides: Public read for published articles; admin write
+    match /posts/{postId} {
+      allow read: if resource.data.published == true || isAdmin();
+      allow write: if isAdmin();
+    }
+
+    // Testimonials: Public read for published; admin write
+    match /testimonials/{testimonialId} {
+      allow read: if resource.data.published == true || isAdmin();
+      allow write: if isAdmin();
+    }
+  }
+}

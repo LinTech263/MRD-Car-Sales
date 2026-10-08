@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-heading: 'Sora', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+    
+    /* Clean, high-end white & architectural graphite palette */
+    --bg-main: #FFFFFF;
+    --bg-subtle: #F8F9FA;
+    --bg-surface: #FFFFFF;
+    --bg-surface-elevated: #FFFFFF;
+    --border-hairline: #E5E7EB;
+    --border-strong: #D1D5DB;
+    
+    --text-primary: #0F172A;
+    --text-secondary: #475569;
+    --text-muted: #94A3B8;
+    
+    /* Champagne Gold for high-value actions */
+    --accent-gold: #B89542;
+    --accent-gold-hover: #9E7D30;
+    --accent-gold-subtle: #FDF9EE;
+    --accent-gold-border: #E8D9B4;
+    
+    --success: #16A34A;
+    --danger: #DC2626;
+  }
+
+  body {
+    font-family: var(--font-body);
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    letter-spacing: -0.025em;
+  }
+}
+
+.font-heading {
+  font-family: var(--font-heading);
+}
+
+.font-body {
+  font-family: var(--font-body);
+}
+
+.font-tabular {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Glass & Hairline finishes */
+.border-hairline {
+  border-color: var(--border-hairline);
+}
+
+.gold-glow:hover {
+  box-shadow: 0 4px 20px -2px rgba(184, 149, 66, 0.15);
+}
+
+/* Print and scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F1F5F9;
+}
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}

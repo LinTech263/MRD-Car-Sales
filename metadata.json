@@ -1,0 +1,6 @@
+{
+  "name": "MRD Car Sales - Harare Luxury Dealership",
+  "description": "High-end vehicle dealership in Mount Pleasant, Harare, Zimbabwe with transparent USD pricing, curated inventory, and seamless WhatsApp enquiry.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
