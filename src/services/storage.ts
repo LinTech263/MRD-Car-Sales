@@ -28,7 +28,7 @@ const SEED_CATEGORIES: Category[] = [
     name: 'SUVs & 4x4s',
     slug: 'suvs-and-4x4s',
     description: 'Commanding luxury four-wheel-drive vehicles engineered for Harare streets and cross-country terrain across Zimbabwe.',
-    coverImage: '/src/assets/images/car_land_cruiser_300_1791464701859.jpg',
+    coverImage: '/assets/images/car_land_cruiser_300_1791464701859.jpg',
     defaultMarkupPercent: 12,
     seoTitle: 'SUVs & 4x4s for Sale in Harare | MRD Car Sales',
     seoDescription: 'Explore our premium selection of luxury SUVs and 4x4s in Mount Pleasant, Harare. Toyota Land Cruiser, Prado, BMW X5 and more with transparent USD pricing.',
@@ -39,7 +39,7 @@ const SEED_CATEGORIES: Category[] = [
     name: 'Double Cabs & Pick-ups',
     slug: 'double-cabs-and-pickups',
     description: 'Workhorse capability paired with executive comfort. Rugged Hilux and Ranger double cabs inspected and ready to drive.',
-    coverImage: '/src/assets/images/car_toyota_hilux_gd6_1791464710852.jpg',
+    coverImage: '/assets/images/car_toyota_hilux_gd6_1791464710852.jpg',
     defaultMarkupPercent: 10,
     seoTitle: 'Double Cabs & Pick-ups for Sale in Harare | MRD Car Sales',
     seoDescription: 'Find pristine Toyota Hilux and Ford Ranger double cabs for sale in Harare. Clean condition, verified mileage, duty paid.',
@@ -50,7 +50,7 @@ const SEED_CATEGORIES: Category[] = [
     name: 'Sedans',
     slug: 'sedans',
     description: 'Refined executive saloons delivering smooth power, prestige, and quiet highway comfort.',
-    coverImage: '/src/assets/images/car_mercedes_c_class_1791464721738.jpg',
+    coverImage: '/assets/images/car_mercedes_c_class_1791464721738.jpg',
     defaultMarkupPercent: 14,
     seoTitle: 'Luxury Sedans for Sale in Harare | MRD Car Sales',
     seoDescription: 'Prestige Mercedes-Benz, BMW, and executive sedans in Mount Pleasant, Harare. Hand-picked condition with all paperwork handled.',
@@ -61,7 +61,7 @@ const SEED_CATEGORIES: Category[] = [
     name: 'Luxury & Performance',
     slug: 'luxury-and-performance',
     description: 'High-specification vehicles offering unparalleled refinement, craftsmanship, and performance.',
-    coverImage: '/src/assets/images/car_range_rover_sport_1791464693124.jpg',
+    coverImage: '/assets/images/car_range_rover_sport_1791464693124.jpg',
     defaultMarkupPercent: 15,
     seoTitle: 'Luxury & Performance Cars Harare | MRD Car Sales',
     seoDescription: 'Top-tier luxury vehicles in Harare. Range Rover, Mercedes-AMG, and BMW M Sport editions available for viewing in Mount Pleasant.',
@@ -72,7 +72,7 @@ const SEED_CATEGORIES: Category[] = [
     name: 'Hatchbacks',
     slug: 'hatchbacks',
     description: 'Compact agility and modern performance for effortless urban driving in Harare.',
-    coverImage: '/src/assets/images/car_mercedes_c_class_1791464721738.jpg',
+    coverImage: '/assets/images/car_mercedes_c_class_1791464721738.jpg',
     defaultMarkupPercent: 12,
     seoTitle: 'Premium Hatchbacks for Sale in Harare | MRD Car Sales',
     seoDescription: 'Clean premium hatchbacks in Mount Pleasant. Inspected, low mileage, transparent USD pricing.',
@@ -113,9 +113,9 @@ const SEED_CARS: Car[] = [
     ],
     description: 'This 2023 Toyota Land Cruiser 300 ZX offers Automatic, Diesel power and 18,500 km on the clock, finished in Pearl White. Available now at MRD Car Sales in Mount Pleasant, Harare. Featuring the sought-after 3.3L Twin-Turbo V6 diesel powerplant, full service record, Japanese auction grade 5 equivalent, duty fully cleared with ZIMRA, and ready for immediate transfer.',
     images: [
-      '/src/assets/images/car_land_cruiser_300_1791464701859.jpg',
-      '/src/assets/images/hero_luxury_showroom_1791464684452.jpg',
-      '/src/assets/images/car_range_rover_sport_1791464693124.jpg',
+      '/assets/images/car_land_cruiser_300_1791464701859.jpg',
+      '/assets/images/hero_luxury_showroom_1791464684452.jpg',
+      '/assets/images/car_range_rover_sport_1791464693124.jpg',
     ],
     coverImageIndex: 0,
     status: 'Available',
@@ -156,9 +156,9 @@ const SEED_CARS: Car[] = [
     ],
     description: 'This 2022 Land Rover Range Rover Sport HSE Dynamic P400 offers Automatic, Petrol power and 24,000 km on the clock, finished in Firenze Red. Available now at MRD Car Sales in Mount Pleasant, Harare. Spotless condition throughout with premium Windsor leather, full service history, and pristine interior.',
     images: [
-      '/src/assets/images/car_range_rover_sport_1791464693124.jpg',
-      '/src/assets/images/hero_luxury_showroom_1791464684452.jpg',
-      '/src/assets/images/car_mercedes_c_class_1791464721738.jpg',
+      '/assets/images/car_range_rover_sport_1791464693124.jpg',
+      '/assets/images/hero_luxury_showroom_1791464684452.jpg',
+      '/assets/images/car_mercedes_c_class_1791464721738.jpg',
     ],
     coverImageIndex: 0,
     status: 'Available',
@@ -199,8 +199,8 @@ const SEED_CARS: Car[] = [
     ],
     description: 'This 2022 Toyota Hilux 2.8 GD-6 Legend 4x4 offers Automatic, Diesel power and 42,000 km on the clock, finished in Glacier White. Available now at MRD Car Sales in Mount Pleasant, Harare. The ultimate double cab for executive commuting and rugged Zimbabwean farm travel. Flawless maintenance history.',
     images: [
-      '/src/assets/images/car_toyota_hilux_gd6_1791464710852.jpg',
-      '/src/assets/images/car_land_cruiser_300_1791464701859.jpg',
+      '/assets/images/car_toyota_hilux_gd6_1791464710852.jpg',
+      '/assets/images/car_land_cruiser_300_1791464701859.jpg',
     ],
     coverImageIndex: 0,
     status: 'Available',
@@ -240,8 +240,8 @@ const SEED_CARS: Car[] = [
     ],
     description: 'This 2022 Mercedes-Benz C-Class C200 AMG Line offers Automatic, Petrol power and 29,000 km on the clock, finished in Iridium Silver Metallic. Available now at MRD Car Sales in Mount Pleasant, Harare. Latest generation W206 with pristine cabin, ultra-quiet ride, and exceptional fuel efficiency.',
     images: [
-      '/src/assets/images/car_mercedes_c_class_1791464721738.jpg',
-      '/src/assets/images/hero_luxury_showroom_1791464684452.jpg',
+      '/assets/images/car_mercedes_c_class_1791464721738.jpg',
+      '/assets/images/hero_luxury_showroom_1791464684452.jpg',
     ],
     coverImageIndex: 0,
     status: 'Available',
@@ -281,8 +281,8 @@ const SEED_CARS: Car[] = [
     ],
     description: 'This 2021 BMW X5 xDrive30d M Sport offers Automatic, Diesel power and 38,000 km on the clock, finished in Mineral White Metallic. Available now at MRD Car Sales in Mount Pleasant, Harare. Reserved for a verified client pending final financing approval.',
     images: [
-      '/src/assets/images/car_land_cruiser_300_1791464701859.jpg',
-      '/src/assets/images/hero_luxury_showroom_1791464684452.jpg',
+      '/assets/images/car_land_cruiser_300_1791464701859.jpg',
+      '/assets/images/hero_luxury_showroom_1791464684452.jpg',
     ],
     coverImageIndex: 0,
     status: 'Reserved',
@@ -322,8 +322,8 @@ const SEED_CARS: Car[] = [
     ],
     description: 'This 2021 Toyota Prado 2.8 GD-6 VX offers Automatic, Diesel power and 49,000 km on the clock, finished in Graphite Grey Metallic. Available now at MRD Car Sales in Mount Pleasant, Harare. Renowned reliability, immaculate 7-seater luxury.',
     images: [
-      '/src/assets/images/car_land_cruiser_300_1791464701859.jpg',
-      '/src/assets/images/car_toyota_hilux_gd6_1791464710852.jpg',
+      '/assets/images/car_land_cruiser_300_1791464701859.jpg',
+      '/assets/images/car_toyota_hilux_gd6_1791464710852.jpg',
     ],
     coverImageIndex: 0,
     status: 'Available',
@@ -363,8 +363,8 @@ const SEED_CARS: Car[] = [
     ],
     description: 'This 2022 Ford Ranger Wildtrak offers Automatic, Diesel power and 35,000 km on the clock, finished in Saber Orange. Delivered to an executive buyer in Borrowdale, Harare. Sold status maintained for market valuation and provenance transparency.',
     images: [
-      '/src/assets/images/car_toyota_hilux_gd6_1791464710852.jpg',
-      '/src/assets/images/hero_luxury_showroom_1791464684452.jpg',
+      '/assets/images/car_toyota_hilux_gd6_1791464710852.jpg',
+      '/assets/images/hero_luxury_showroom_1791464684452.jpg',
     ],
     coverImageIndex: 0,
     status: 'Sold',
@@ -405,8 +405,8 @@ const SEED_CARS: Car[] = [
     ],
     description: 'This 2020 Volkswagen Golf GTI TCR offers Automatic, Petrol power and 52,000 km on the clock, finished in Pure White. Available now at MRD Car Sales in Mount Pleasant, Harare. Pristine condition with complete agent service records.',
     images: [
-      '/src/assets/images/car_mercedes_c_class_1791464721738.jpg',
-      '/src/assets/images/hero_luxury_showroom_1791464684452.jpg',
+      '/assets/images/car_mercedes_c_class_1791464721738.jpg',
+      '/assets/images/hero_luxury_showroom_1791464684452.jpg',
     ],
     coverImageIndex: 0,
     status: 'Available',
@@ -508,7 +508,7 @@ const SEED_LEADS: Lead[] = [
     preferredContactMethod: 'WhatsApp',
     carId: 'car-lc300',
     carTitle: '2023 Toyota Land Cruiser 300 ZX',
-    carCoverImage: '/src/assets/images/car_land_cruiser_300_1791464701859.jpg',
+    carCoverImage: '/assets/images/car_land_cruiser_300_1791464701859.jpg',
     askingPriceUSD: 128000,
     preferredViewingDate: '2026-10-10',
     message: 'Good day. Is the Land Cruiser 300 still available for viewing this Saturday in Mount Pleasant? I am ready with cash USD.',
@@ -525,7 +525,7 @@ const SEED_LEADS: Lead[] = [
     preferredContactMethod: 'Call',
     carId: 'car-merc-c200',
     carTitle: '2022 Mercedes-Benz C200 AMG Line',
-    carCoverImage: '/src/assets/images/car_mercedes_c_class_1791464721738.jpg',
+    carCoverImage: '/assets/images/car_mercedes_c_class_1791464721738.jpg',
     askingPriceUSD: 41500,
     offerUSD: 39000,
     message: 'Offering $39,000 USD prompt settlement. Please call me back on my mobile.',
@@ -542,7 +542,7 @@ const SEED_LEADS: Lead[] = [
     preferredContactMethod: 'WhatsApp',
     carId: 'car-rr-sport',
     carTitle: '2022 Land Rover Range Rover Sport HSE Dynamic',
-    carCoverImage: '/src/assets/images/car_range_rover_sport_1791464693124.jpg',
+    carCoverImage: '/assets/images/car_range_rover_sport_1791464693124.jpg',
     askingPriceUSD: 94000,
     preferredViewingDate: '2026-10-09',
     interestedInFinance: false,
@@ -605,7 +605,7 @@ const SEED_POSTS: GuideArticle[] = [
     seoTitle: 'How to Buy a Used Luxury Car in Zimbabwe | Buyer Checklist',
     seoDescription: 'Essential checklist for buying a pre-owned luxury car in Harare, Zimbabwe. ZIMRA duty clearance, mechanical inspection, and transfer of ownership guide.',
     createdAt: '2026-09-10T10:00:00Z',
-    coverImage: '/src/assets/images/car_range_rover_sport_1791464693124.jpg',
+    coverImage: '/assets/images/car_range_rover_sport_1791464693124.jpg',
     contentMarkdown: `Buying an executive or luxury vehicle in Zimbabwe is a substantial investment. Whether you are looking at a Range Rover Sport, a Mercedes-Benz C-Class, or a BMW X5 in Harare, protecting your capital demands a structured approach.
 
 ### 1. Insist on Transparent ZIMRA Duty and Clearance Documentation
@@ -640,7 +640,7 @@ Currency volatility in Zimbabwe means pricing transparency is paramount. Reputab
     seoTitle: 'Import vs Local Car Purchase in Harare, Zimbabwe | Comparison',
     seoDescription: 'Should you import a car directly or buy locally in Harare? Analyze CIF shipping, port delays in Durban and Beira, ZIMRA duty calculations, and risk.',
     createdAt: '2026-09-18T12:00:00Z',
-    coverImage: '/src/assets/images/hero_luxury_showroom_1791464684452.jpg',
+    coverImage: '/assets/images/hero_luxury_showroom_1791464684452.jpg',
     contentMarkdown: `Many motorists in Harare debate whether to import a vehicle personally from the UK or Japan, or buy directly from an established dealership in Mount Pleasant or Borrowdale. Both routes have distinct realities.
 
 ### The True Cost of Direct Import
@@ -675,7 +675,7 @@ When you choose a vehicle from an established local dealership like MRD Car Sale
     seoTitle: 'What to Check Before Buying a Used SUV in Harare | 4x4 Guide',
     seoDescription: 'Expert guide to inspecting used SUVs and 4x4s in Harare, Zimbabwe. Check transfer boxes, diesel injectors, chassis corrosion, and suspension.',
     createdAt: '2026-09-24T15:00:00Z',
-    coverImage: '/src/assets/images/car_land_cruiser_300_1791464701859.jpg',
+    coverImage: '/assets/images/car_land_cruiser_300_1791464701859.jpg',
     contentMarkdown: `SUVs and double cabs are the workhorses of Zimbabwe, prized for ground clearance, pothole resilience, and long-distance touring capabilities. But a poorly maintained 4x4 can become an expensive headache.
 
 ### 1. Test the 4x4 System and Low-Range Transfer Case
@@ -740,6 +740,18 @@ export class StorageService {
     }
     if (!localStorage.getItem(STORAGE_KEYS.TESTIMONIALS)) {
       localStorage.setItem(STORAGE_KEYS.TESTIMONIALS, JSON.stringify([]));
+    }
+
+    // Auto-migrate any legacy /src/assets/images/ paths stored in user's localStorage
+    try {
+      Object.values(STORAGE_KEYS).forEach((key) => {
+        const val = localStorage.getItem(key);
+        if (val && val.includes('/src/assets/images/')) {
+          localStorage.setItem(key, val.split('/src/assets/images/').join('/assets/images/'));
+        }
+      });
+    } catch {
+      // Ignore storage errors in restricted contexts
     }
   }
 

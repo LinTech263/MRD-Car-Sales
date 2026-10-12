@@ -233,7 +233,7 @@ export const HomePage: React.FC<HomePageProps> = ({
             <div className="lg:col-span-6">
               <div className="relative aspect-[16/10] sm:aspect-[4/3] w-full rounded-2xl overflow-hidden border border-gray-200 shadow-sm bg-gray-100 group">
                 <img
-                  src={settings.heroImageUrl || '/src/assets/images/hero_luxury_showroom_1791464684452.jpg'}
+                  src={settings.heroImageUrl || '/assets/images/hero_luxury_showroom_1791464684452.jpg'}
                   alt="MRD Car Sales Mount Pleasant Harare Dealership Showroom"
                   fetchPriority="high"
                   className="w-full h-full object-cover group-hover:scale-102 transition-transform duration-500"

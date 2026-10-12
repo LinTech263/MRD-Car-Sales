@@ -44,7 +44,7 @@ export function updatePageSEO(config: SEOConfig, settings: DealershipSettings): 
   setMeta('property', 'og:type', config.ogType || 'website');
   setMeta('property', 'og:site_name', settings.businessName);
 
-  const fallbackImage = settings.heroImageUrl || '/src/assets/images/hero_luxury_showroom_1791464684452.jpg';
+  const fallbackImage = settings.heroImageUrl || '/assets/images/hero_luxury_showroom_1791464684452.jpg';
   setMeta('property', 'og:image', config.ogImage || fallbackImage);
 
   // 5. Twitter Card
@@ -235,7 +235,7 @@ export function buildArticleSchema(article: GuideArticle, settings: DealershipSe
       name: settings.businessName,
       logo: {
         '@type': 'ImageObject',
-        url: `${appBaseUrl}/src/assets/images/hero_luxury_showroom_1791464684452.jpg`,
+        url: `${appBaseUrl}/assets/images/hero_luxury_showroom_1791464684452.jpg`,
       },
     },
   };

@@ -19,7 +19,7 @@ export const INITIAL_BUSINESS_SETTINGS: DealershipSettings = {
   zigExchangeRate: 26.5, // 1 USD = 26.5 ZiG (admin configurable)
   defaultMarkupPercent: 12.5,
   logoUrl: '', // Default placeholder wordmark used when empty
-  heroImageUrl: '/src/assets/images/hero_luxury_showroom_1791464684452.jpg',
+  heroImageUrl: '/assets/images/hero_luxury_showroom_1791464684452.jpg',
   googleMapsEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15194.27515157144!2d31.037922!3d-17.781373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1931a575b5b9e075%3A0x6b4f7a5b3a4e9!2sMount%20Pleasant%2C%20Harare!5e0!3m2!1sen!2szw!4v1700000000000',
   googleMapsUrl: 'https://maps.google.com/?q=Mount+Pleasant+Harare+Zimbabwe',
   googleAnalyticsId: 'G-MRDHARARE01',

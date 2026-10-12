@@ -10,7 +10,7 @@ export const CarGallery: React.FC<CarGalleryProps> = ({ images, title }) => {
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [lightboxOpen, setLightboxOpen] = useState(false);
 
-  const currentImage = images[selectedIndex] || images[0] || '/src/assets/images/hero_luxury_showroom_1791464684452.jpg';
+  const currentImage = images[selectedIndex] || images[0] || '/assets/images/hero_luxury_showroom_1791464684452.jpg';
 
   const handlePrev = (e?: React.MouseEvent) => {
     e?.stopPropagation();

@@ -39,7 +39,7 @@ export const CarEditModal: React.FC<CarEditModalProps> = ({
   const [featuresInput, setFeaturesInput] = useState(car?.features?.join(', ') || 'Sunroof, Leather Seats, 360 Camera');
   const [description, setDescription] = useState(car?.description || '');
   const [images, setImages] = useState<string[]>(
-    car?.images?.length ? car.images : ['/src/assets/images/car_land_cruiser_300_1791464701859.jpg']
+    car?.images?.length ? car.images : ['/assets/images/car_land_cruiser_300_1791464701859.jpg']
   );
   const [newImageUrl, setNewImageUrl] = useState('');
   const [coverIndex, setCoverIndex] = useState(car?.coverImageIndex || 0);
@@ -552,7 +552,7 @@ export const CarEditModal: React.FC<CarEditModalProps> = ({
             <div className="flex gap-2">
               <input
                 type="text"
-                placeholder="Paste Image URL or asset path (e.g. /src/assets/images/...)"
+                placeholder="Paste Image URL or asset path (e.g. /assets/images/...)"
                 value={newImageUrl}
                 onChange={(e) => setNewImageUrl(e.target.value)}
                 className="flex-1 p-2.5 rounded-lg border border-gray-300 outline-none"

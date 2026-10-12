@@ -28,7 +28,7 @@ export const CarCard: React.FC<CarCardProps> = ({
     trackEvent('save_car', { carId: car.id, saved: nowSaved });
   };
 
-  const coverImage = car.images[car.coverImageIndex || 0] || car.images[0] || '/src/assets/images/hero_luxury_showroom_1791464684452.jpg';
+  const coverImage = car.images[car.coverImageIndex || 0] || car.images[0] || '/assets/images/hero_luxury_showroom_1791464684452.jpg';
 
   const isSold = car.status === 'Sold';
   const isReserved = car.status === 'Reserved';

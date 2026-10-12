@@ -459,7 +459,7 @@ export const AdminPortal: React.FC<AdminPortalProps> = ({ onLogout, onNavigateSi
                         <tr key={c.id} className="hover:bg-gray-50/80">
                           <td className="p-3.5 flex items-center gap-3">
                             <img
-                              src={c.images[0] || '/src/assets/images/hero_luxury_showroom_1791464684452.jpg'}
+                              src={c.images[0] || '/assets/images/hero_luxury_showroom_1791464684452.jpg'}
                               alt={c.model}
                               className="w-12 h-9 rounded object-cover border border-gray-200 shrink-0"
                             />
